@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using System;
 using System.Linq;
 public class SensoHandExample : Senso.Hand {
@@ -27,6 +28,8 @@ public class SensoHandExample : Senso.Hand {
     public bool control,timer=false,change=false,stop=false;//Whether the value is being changed
     public float min=0f,max=127f;//Min,max value range of MIDICC values
 
+    private List<GameObject> planes=new List<GameObject>(); //"Planes" objects, in order to change their mode when the stop motion happens
+
 
     private Quaternion[][] fingerInitialRotations;
 
@@ -50,7 +53,16 @@ public class SensoHandExample : Senso.Hand {
                 fingerInitialRotations[i][j] = arr[j].localRotation;
         }
 
-        
+
+        //Get planes
+        foreach (GameObject obj in FindObjectsOfType(typeof(GameObject)) as GameObject[])
+        {
+            if (obj.name.Contains("Planes"))
+            {
+                planes.Add(obj);
+            }
+        }
+
     }
 
     public void Update()
@@ -318,12 +330,14 @@ public class SensoHandExample : Senso.Hand {
         {
             stop = true; //Toggle change so that SendMax sends bang to toggle MIDI CC changing by the wave values
             timer = true; //Toggle timer
-            //Debug.Log("Stop");
+            Debug.Log("Stop");
+
+            //Switch planes mode
+            foreach (GameObject p in planes) {
+                p.GetComponent<PlanesController>().switchPlanes();
+            }
 
         }
-        
-        
-
     }
 
     //Scale values to different range function

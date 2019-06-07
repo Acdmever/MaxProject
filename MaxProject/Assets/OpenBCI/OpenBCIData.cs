@@ -69,7 +69,7 @@ public class OpenBCIData : MonoBehaviour
             initWaves(); //Set all waves to 0
             setWaves(); //Update all waves
             setWaves2();
-            printWaves(); // Format print of all wave values
+            //printWaves(); // Format print of all wave values
 
         }
         c = (c + 1) % fps;
@@ -111,7 +111,7 @@ public class OpenBCIData : MonoBehaviour
     private void setWaves() {
         //Working with mean for each wave and max value
 
-        //Delta waves 1-4 hz (Posterior part)
+        //Delta waves 1-4 hz (Posterior part)   NOTE: You can also ignore 1hz freq values in order to ignore most blinking artifacts.
         int[] deltaCH = {5,6,7,8,15,16 }; //Channels where the waves are present
         double[] deltaW = new double[4 * deltaCH.Length]; //Create array to store all values relevant to the wave (# of freqs that the wave is present in * # of channels the wave is present in)
         int i=0;
@@ -150,8 +150,8 @@ public class OpenBCIData : MonoBehaviour
         theta = thetaW.Average(); //Mean
         thetaM = thetaW.Max(); //Max
 
-        //Alpha waves 8-12hz (Back of head)
-        int[] alphaCH = {5, 6, 7, 8}; //Channels in occipital and parietal area
+        //Alpha waves 8-12hz (Back of head, prefrontal for emotion regulations)
+        int[] alphaCH = {5, 6, 7, 8, 11, 12}; //Channels in occipital and parietal area
         double[] alphaW = new double[5 * alphaCH.Length];//Array where the wave values will be stored
         i = 0;
         foreach (int chan in alphaCH)
@@ -224,7 +224,7 @@ public class OpenBCIData : MonoBehaviour
         smrR = smrWR.Average();//Mean of right side
         smrL = smrWL.Average(); // Mean of left side
 
-        //Low beta waves 12-16 hz (Frontocentral, posterior)
+        //Low beta waves (sometimes called High Alpha) 12-16 hz (Frontocentral, posterior)
         int[] betaCH = {1,2,3,4,5,6,7,8,13,14,15,16 };//Channels where the waves are present
         int[] betaCHR = { 2, 4, 6, 8, 14, 16 }; //Channels in right side
         int[] betaCHL = { 1, 3, 5, 7, 13, 15 }; //Channels in left side

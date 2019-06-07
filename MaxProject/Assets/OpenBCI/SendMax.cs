@@ -152,13 +152,13 @@ public class SendMax : MonoBehaviour
             else {
                 msg.Add(2);
             }
-            key = false; //CHCK IF IT WORKS
-            key2 = false;
+            //key = false; //CHCK IF IT WORKS
+            //key2 = false;
             OSCHandler.Instance.SendMessageToClient("myClient", "/key", msg);
         }
         else if (speed && ctrl)
         {
-            speed = false;
+            //speed = false;
             msg = new List<object>();
             int k = (int)Mathf.Round(value * 20f / 127f) + 10;
             msg.Add(k);
