@@ -71,6 +71,7 @@
     <Compile Include="Assets\OpenBCI\OSCPacket.cs" />
     <Compile Include="Assets\OpenBCI\OSCReciever.cs" />
     <Compile Include="Assets\OpenBCI\OSCServer.cs" />
+    <Compile Include="Assets\OpenBCI\Python.cs" />
     <Compile Include="Assets\OpenBCI\SendMax.cs" />
     <Compile Include="Assets\Senso\Body.cs" />
     <Compile Include="Assets\Senso\Examples\CanvasValues.cs" />
