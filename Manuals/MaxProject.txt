@@ -44,3 +44,11 @@ Additional notes:
 In the current project, we do not need to worry about 2 planes being seen at the same time, due to the distance between planes, there will not be a point where 2 planes are in the given range of the viewport  
 
 
+
+Papers to see: Thorsten O Zander, Christian Kothe, Sabine Jatzev, and Matti
+Gaertner. 2010. Enhancing human-computer interaction with
+input from active and passive brain-computer interfaces. In
+Brain-computer interfaces. Springer, 181–199.
+
+
+MIDI TIMING, VIBROPIXEL, DIFFERENT TYPE OF CHANGING KEY

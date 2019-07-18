@@ -1,0 +1,59 @@
+BCI
+
+https://link.springer.com/chapter/10.1007%2F978-1-84996-272-8_11 	Zander T.O., Kothe C., Jatzev S., Gaertner M. (2010) Enhancing Human-Computer Interaction with Input from Active and Passive Brain-Computer Interfaces. In: Tan D., Nijholt A. (eds) Brain-Computer Interfaces. Human-Computer Interaction Series. Springer, London		Good intro to passive BCIs
+
+https://link.springer.com/content/pdf/10.1007%2F11848035.pdf	Chanel G, et al (2006) Emotion assessment: Arousal evaluation using EEG’s and peripheral physiological signals. Multimedia Content Representation, Classification and Security, pp 530–537	Getting info from BCI data other than just wave amplitudes
+
+[Search in Novanet]	Stern, John M., and Engel, Jerome. Atlas of EEG Patterns. 2nd ed. Philadelphia: Wolters Kluwer/Lippincott Williams & Wilkins Health, 2013. Web.	Explanation of all waves, really good for fully understanding waves
+
+https://dl.acm.org/citation.cfm?id=2858276	#Scanners: Exploring the Control of Adaptive Films using Brain-Computer Interaction	Application using BCI data
+
+http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7344552&isnumber=7344542	M. Chen, J. Han, L. Guo, J. Wang and I. Patras, "Identifying valence and arousal levels via connectivity between EEG channels," 2015 International Conference on Affective Computing and Intelligent Interaction (ACII), Xi'an, 2015, pp. 63-69.
+
+https://link.springer.com/content/pdf/10.1007%2F978-3-319-26561-2.pdf	Javaid, Mair Muteeb M., Muhammad Abdullah A. Yousaf, Quratulain Zahid Z. Sheikh, Mian M. Awais, Sameera Saleem, and Maryam Khalid. Lecture Notes in Computer Science (including Subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics) 9492 (2015): 182-90. Web.
+
+https://pdfs.semanticscholar.org/5097/b37a30b8d7a8d2bb03b307be5bf5deab73c4.pdf		Bos, D.O. (2006) EEG-based emotion recognition. The influence of Visual and Auditory Stimuli. 
+
+Brain Waves: Several articles in https://www.sciencedirect.com/ 	Search for each type of wave (alpha,beta,etc), mostly to understand and get an intro to them.
+Additionally, chack wikipedia to get the simplest introduction to brain waves.
+
+https://ieeexplore.ieee.org/document/7872610	M. Z. Ilyas, P. Saad, M. I. Ahmad and A. R. I. Ghani, "Classification of EEG signals for brain-computer interface applications: Performance comparison," 2016 International Conference on Robotics, Automation and Sciences (ICORAS), Ayer Keroh, 2016, pp. 1-4.
+
+
+http://www.enterface.net/enterface06/docs/results/reports/project7.pdf		Emotion Detection in the Loop from Brain Signals and Facial Images. Arman Savran, Koray Ciftci, Guillame Chanel, Javier Cruz Mota, Luong Hong Viet, Bülent Sankur, Lale Akarun, Alice Caplier and Michele Rombaut	eNTERFACE Dataset explanations
+
+
+Valence-Arousal chart: https://www.researchgate.net/figure/Two-dimensional-valence-arousal-space_fig1_304124018
+
+
+Bos Paper:
+
+Valence: positive, happy emotions result in a higher
+frontal coherence in alpha, and higher right parietal
+beta power, compared to negative emotion.
+
+Arousal: excitation presented a higher beta power and
+coherence in the parietal lobe, plus lower alpha activity.
+
+Dominance: strength of an emotion, which is generally
+expressed in the EEG as an increase in the beta / alpha
+activity ratio in the frontal lobe, plus an increase in
+beta activity at the parietal lobe.
+
+
+
+
+
+Find EEG Valence-Arousal datasets (IAPS, IADS)
+
+
+Databases: http://www.enterface.net/results/	eNTERFACE 06 Project 7 Database
+https://ieeexplore.ieee.org/document/7887697	Dreamer dataset
+
+
+
+
+Sampling rates (Hz): OpenBCI 250	Dataset_1 1000, except 1st file which is 250 (valence,arousal)		Dataset_2 125
+
+
+	
