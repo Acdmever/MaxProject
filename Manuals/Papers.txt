@@ -47,9 +47,9 @@ beta activity at the parietal lobe.
 Find EEG Valence-Arousal datasets (IAPS, IADS)
 
 
-Databases: http://www.enterface.net/results/	eNTERFACE 06 Project 7 Database
-https://ieeexplore.ieee.org/document/7887697	Dreamer dataset
-
+Databases: http://www.enterface.net/results/	(Valence, Arousal)eNTERFACE 06 Project 7 Database
+https://ieeexplore.ieee.org/document/7887697	(Valence, Arousal)Dreamer dataset
+http://www.bbci.de/competition/iv/desc_1.html   (Motor Imagery) Dataset I of BCI competition IV (2008)
 
 
 
